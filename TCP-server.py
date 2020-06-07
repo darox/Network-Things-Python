@@ -10,7 +10,7 @@ PORT = 65432
 
 
 
-#Init a TCP socket
+#Init a TCP socket with family INET and socket kind SOCK_STREAM
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     #Bind to the above configured host and port
     s.bind((HOST, PORT))
